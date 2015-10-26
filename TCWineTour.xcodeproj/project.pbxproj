@@ -1,506 +1,1119 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C05F1FBD1BDEAA4F00EA05B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */; };
-		C05F1FBF1BDEAA4F00EA05B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */; };
-		C05F1FC21BDEAA4F00EA05B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05F1FC01BDEAA4F00EA05B7 /* Main.storyboard */; };
-		C05F1FC41BDEAA4F00EA05B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05F1FC31BDEAA4F00EA05B7 /* Assets.xcassets */; };
-		C05F1FC71BDEAA4F00EA05B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05F1FC51BDEAA4F00EA05B7 /* LaunchScreen.storyboard */; };
-		C05F1FD21BDEAA4F00EA05B7 /* TCWineTourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FD11BDEAA4F00EA05B7 /* TCWineTourTests.swift */; };
-		C05F1FDD1BDEAA4F00EA05B7 /* TCWineTourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FDC1BDEAA4F00EA05B7 /* TCWineTourUITests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C05F1FCE1BDEAA4F00EA05B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C05F1FB11BDEAA4F00EA05B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C05F1FB81BDEAA4F00EA05B7;
-			remoteInfo = TCWineTour;
-		};
-		C05F1FD91BDEAA4F00EA05B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C05F1FB11BDEAA4F00EA05B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C05F1FB81BDEAA4F00EA05B7;
-			remoteInfo = TCWineTour;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		C05F1FB91BDEAA4F00EA05B7 /* TCWineTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCWineTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C05F1FC11BDEAA4F00EA05B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C05F1FC31BDEAA4F00EA05B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C05F1FC61BDEAA4F00EA05B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C05F1FC81BDEAA4F00EA05B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C05F1FCD1BDEAA4F00EA05B7 /* TCWineTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCWineTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C05F1FD11BDEAA4F00EA05B7 /* TCWineTourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCWineTourTests.swift; sourceTree = "<group>"; };
-		C05F1FD31BDEAA4F00EA05B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C05F1FD81BDEAA4F00EA05B7 /* TCWineTourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCWineTourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C05F1FDC1BDEAA4F00EA05B7 /* TCWineTourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCWineTourUITests.swift; sourceTree = "<group>"; };
-		C05F1FDE1BDEAA4F00EA05B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C05F1FB61BDEAA4F00EA05B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C05F1FCA1BDEAA4F00EA05B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C05F1FD51BDEAA4F00EA05B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C05F1FB01BDEAA4F00EA05B7 = {
-			isa = PBXGroup;
-			children = (
-				C05F1FBB1BDEAA4F00EA05B7 /* TCWineTour */,
-				C05F1FD01BDEAA4F00EA05B7 /* TCWineTourTests */,
-				C05F1FDB1BDEAA4F00EA05B7 /* TCWineTourUITests */,
-				C05F1FBA1BDEAA4F00EA05B7 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C05F1FBA1BDEAA4F00EA05B7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C05F1FB91BDEAA4F00EA05B7 /* TCWineTour.app */,
-				C05F1FCD1BDEAA4F00EA05B7 /* TCWineTourTests.xctest */,
-				C05F1FD81BDEAA4F00EA05B7 /* TCWineTourUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C05F1FBB1BDEAA4F00EA05B7 /* TCWineTour */ = {
-			isa = PBXGroup;
-			children = (
-				C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */,
-				C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */,
-				C05F1FC01BDEAA4F00EA05B7 /* Main.storyboard */,
-				C05F1FC31BDEAA4F00EA05B7 /* Assets.xcassets */,
-				C05F1FC51BDEAA4F00EA05B7 /* LaunchScreen.storyboard */,
-				C05F1FC81BDEAA4F00EA05B7 /* Info.plist */,
-			);
-			path = TCWineTour;
-			sourceTree = "<group>";
-		};
-		C05F1FD01BDEAA4F00EA05B7 /* TCWineTourTests */ = {
-			isa = PBXGroup;
-			children = (
-				C05F1FD11BDEAA4F00EA05B7 /* TCWineTourTests.swift */,
-				C05F1FD31BDEAA4F00EA05B7 /* Info.plist */,
-			);
-			path = TCWineTourTests;
-			sourceTree = "<group>";
-		};
-		C05F1FDB1BDEAA4F00EA05B7 /* TCWineTourUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C05F1FDC1BDEAA4F00EA05B7 /* TCWineTourUITests.swift */,
-				C05F1FDE1BDEAA4F00EA05B7 /* Info.plist */,
-			);
-			path = TCWineTourUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C05F1FB81BDEAA4F00EA05B7 /* TCWineTour */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C05F1FE11BDEAA4F00EA05B7 /* Build configuration list for PBXNativeTarget "TCWineTour" */;
-			buildPhases = (
-				C05F1FB51BDEAA4F00EA05B7 /* Sources */,
-				C05F1FB61BDEAA4F00EA05B7 /* Frameworks */,
-				C05F1FB71BDEAA4F00EA05B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TCWineTour;
-			productName = TCWineTour;
-			productReference = C05F1FB91BDEAA4F00EA05B7 /* TCWineTour.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C05F1FCC1BDEAA4F00EA05B7 /* TCWineTourTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C05F1FE41BDEAA4F00EA05B7 /* Build configuration list for PBXNativeTarget "TCWineTourTests" */;
-			buildPhases = (
-				C05F1FC91BDEAA4F00EA05B7 /* Sources */,
-				C05F1FCA1BDEAA4F00EA05B7 /* Frameworks */,
-				C05F1FCB1BDEAA4F00EA05B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C05F1FCF1BDEAA4F00EA05B7 /* PBXTargetDependency */,
-			);
-			name = TCWineTourTests;
-			productName = TCWineTourTests;
-			productReference = C05F1FCD1BDEAA4F00EA05B7 /* TCWineTourTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C05F1FD71BDEAA4F00EA05B7 /* TCWineTourUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C05F1FE71BDEAA4F00EA05B7 /* Build configuration list for PBXNativeTarget "TCWineTourUITests" */;
-			buildPhases = (
-				C05F1FD41BDEAA4F00EA05B7 /* Sources */,
-				C05F1FD51BDEAA4F00EA05B7 /* Frameworks */,
-				C05F1FD61BDEAA4F00EA05B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C05F1FDA1BDEAA4F00EA05B7 /* PBXTargetDependency */,
-			);
-			name = TCWineTourUITests;
-			productName = TCWineTourUITests;
-			productReference = C05F1FD81BDEAA4F00EA05B7 /* TCWineTourUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C05F1FB11BDEAA4F00EA05B7 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = DonovanCotter;
-				TargetAttributes = {
-					C05F1FB81BDEAA4F00EA05B7 = {
-						CreatedOnToolsVersion = 7.0.1;
-					};
-					C05F1FCC1BDEAA4F00EA05B7 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = C05F1FB81BDEAA4F00EA05B7;
-					};
-					C05F1FD71BDEAA4F00EA05B7 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = C05F1FB81BDEAA4F00EA05B7;
-					};
-				};
-			};
-			buildConfigurationList = C05F1FB41BDEAA4F00EA05B7 /* Build configuration list for PBXProject "TCWineTour" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = C05F1FB01BDEAA4F00EA05B7;
-			productRefGroup = C05F1FBA1BDEAA4F00EA05B7 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C05F1FB81BDEAA4F00EA05B7 /* TCWineTour */,
-				C05F1FCC1BDEAA4F00EA05B7 /* TCWineTourTests */,
-				C05F1FD71BDEAA4F00EA05B7 /* TCWineTourUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C05F1FB71BDEAA4F00EA05B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C05F1FC71BDEAA4F00EA05B7 /* LaunchScreen.storyboard in Resources */,
-				C05F1FC41BDEAA4F00EA05B7 /* Assets.xcassets in Resources */,
-				C05F1FC21BDEAA4F00EA05B7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C05F1FCB1BDEAA4F00EA05B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C05F1FD61BDEAA4F00EA05B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C05F1FB51BDEAA4F00EA05B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C05F1FBF1BDEAA4F00EA05B7 /* ViewController.swift in Sources */,
-				C05F1FBD1BDEAA4F00EA05B7 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C05F1FC91BDEAA4F00EA05B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C05F1FD21BDEAA4F00EA05B7 /* TCWineTourTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C05F1FD41BDEAA4F00EA05B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C05F1FDD1BDEAA4F00EA05B7 /* TCWineTourUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C05F1FCF1BDEAA4F00EA05B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C05F1FB81BDEAA4F00EA05B7 /* TCWineTour */;
-			targetProxy = C05F1FCE1BDEAA4F00EA05B7 /* PBXContainerItemProxy */;
-		};
-		C05F1FDA1BDEAA4F00EA05B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C05F1FB81BDEAA4F00EA05B7 /* TCWineTour */;
-			targetProxy = C05F1FD91BDEAA4F00EA05B7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C05F1FC01BDEAA4F00EA05B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C05F1FC11BDEAA4F00EA05B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C05F1FC51BDEAA4F00EA05B7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C05F1FC61BDEAA4F00EA05B7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C05F1FDF1BDEAA4F00EA05B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C05F1FE01BDEAA4F00EA05B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C05F1FE21BDEAA4F00EA05B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TCWineTour/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donovan.cotter.TCWineTour;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C05F1FE31BDEAA4F00EA05B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TCWineTour/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donovan.cotter.TCWineTour;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		C05F1FE51BDEAA4F00EA05B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TCWineTourTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donovan.cotter.TCWineTourTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCWineTour.app/TCWineTour";
-			};
-			name = Debug;
-		};
-		C05F1FE61BDEAA4F00EA05B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TCWineTourTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donovan.cotter.TCWineTourTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCWineTour.app/TCWineTour";
-			};
-			name = Release;
-		};
-		C05F1FE81BDEAA4F00EA05B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TCWineTourUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donovan.cotter.TCWineTourUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TCWineTour;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		C05F1FE91BDEAA4F00EA05B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TCWineTourUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.donovan.cotter.TCWineTourUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TCWineTour;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C05F1FB41BDEAA4F00EA05B7 /* Build configuration list for PBXProject "TCWineTour" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C05F1FDF1BDEAA4F00EA05B7 /* Debug */,
-				C05F1FE01BDEAA4F00EA05B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C05F1FE11BDEAA4F00EA05B7 /* Build configuration list for PBXNativeTarget "TCWineTour" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C05F1FE21BDEAA4F00EA05B7 /* Debug */,
-				C05F1FE31BDEAA4F00EA05B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C05F1FE41BDEAA4F00EA05B7 /* Build configuration list for PBXNativeTarget "TCWineTourTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C05F1FE51BDEAA4F00EA05B7 /* Debug */,
-				C05F1FE61BDEAA4F00EA05B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C05F1FE71BDEAA4F00EA05B7 /* Build configuration list for PBXNativeTarget "TCWineTourUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C05F1FE81BDEAA4F00EA05B7 /* Debug */,
-				C05F1FE91BDEAA4F00EA05B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C05F1FB11BDEAA4F00EA05B7 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>078015B137FA5AD9901D5F60</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>427F593BF2C3AD57A713246D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8BBF60C618AB750A58633A99</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>078015B137FA5AD9901D5F60</string>
+				<string>427F593BF2C3AD57A713246D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937D36A6D41E27212F13C4C6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>99FD55D248AAB5DCF3C55F34</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EA8F4258009570F028980DCE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FB01BDEAA4F00EA05B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C05F1FBB1BDEAA4F00EA05B7</string>
+				<string>C05F1FD01BDEAA4F00EA05B7</string>
+				<string>C05F1FDB1BDEAA4F00EA05B7</string>
+				<string>C05F1FBA1BDEAA4F00EA05B7</string>
+				<string>8BBF60C618AB750A58633A99</string>
+				<string>DDA17534B06D0BFFFD40227C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FB11BDEAA4F00EA05B7</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>DonovanCotter</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>C05F1FB81BDEAA4F00EA05B7</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.0.1</string>
+					</dict>
+					<key>C05F1FCC1BDEAA4F00EA05B7</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.0.1</string>
+						<key>TestTargetID</key>
+						<string>C05F1FB81BDEAA4F00EA05B7</string>
+					</dict>
+					<key>C05F1FD71BDEAA4F00EA05B7</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.0.1</string>
+						<key>TestTargetID</key>
+						<string>C05F1FB81BDEAA4F00EA05B7</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C05F1FB41BDEAA4F00EA05B7</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C05F1FB01BDEAA4F00EA05B7</string>
+			<key>productRefGroup</key>
+			<string>C05F1FBA1BDEAA4F00EA05B7</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C05F1FB81BDEAA4F00EA05B7</string>
+				<string>C05F1FCC1BDEAA4F00EA05B7</string>
+				<string>C05F1FD71BDEAA4F00EA05B7</string>
+			</array>
+		</dict>
+		<key>C05F1FB41BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C05F1FDF1BDEAA4F00EA05B7</string>
+				<string>C05F1FE01BDEAA4F00EA05B7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C05F1FB51BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C05F1FBF1BDEAA4F00EA05B7</string>
+				<string>C05F1FBD1BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FB61BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>99FD55D248AAB5DCF3C55F34</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FB71BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C05F1FC71BDEAA4F00EA05B7</string>
+				<string>C05F1FC41BDEAA4F00EA05B7</string>
+				<string>C05F1FC21BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FB81BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C05F1FE11BDEAA4F00EA05B7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>EF2A5EA4A55ED3ECB76F0EDF</string>
+				<string>C05F1FB51BDEAA4F00EA05B7</string>
+				<string>C05F1FB61BDEAA4F00EA05B7</string>
+				<string>C05F1FB71BDEAA4F00EA05B7</string>
+				<string>937D36A6D41E27212F13C4C6</string>
+				<string>D65C4A79EFF887A2C1DE3032</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TCWineTour</string>
+			<key>productName</key>
+			<string>TCWineTour</string>
+			<key>productReference</key>
+			<string>C05F1FB91BDEAA4F00EA05B7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>C05F1FB91BDEAA4F00EA05B7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TCWineTour.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C05F1FBA1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C05F1FB91BDEAA4F00EA05B7</string>
+				<string>C05F1FCD1BDEAA4F00EA05B7</string>
+				<string>C05F1FD81BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FBB1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C05F1FBC1BDEAA4F00EA05B7</string>
+				<string>C05F1FBE1BDEAA4F00EA05B7</string>
+				<string>C05F1FC01BDEAA4F00EA05B7</string>
+				<string>C05F1FC31BDEAA4F00EA05B7</string>
+				<string>C05F1FC51BDEAA4F00EA05B7</string>
+				<string>C05F1FC81BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TCWineTour</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FBC1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FBD1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05F1FBC1BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FBE1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FBF1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05F1FBE1BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FC01BDEAA4F00EA05B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C05F1FC11BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FC11BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FC21BDEAA4F00EA05B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05F1FC01BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FC31BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FC41BDEAA4F00EA05B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05F1FC31BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FC51BDEAA4F00EA05B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C05F1FC61BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FC61BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FC71BDEAA4F00EA05B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05F1FC51BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FC81BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FC91BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C05F1FD21BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FCA1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FCB1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FCC1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C05F1FE41BDEAA4F00EA05B7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C05F1FC91BDEAA4F00EA05B7</string>
+				<string>C05F1FCA1BDEAA4F00EA05B7</string>
+				<string>C05F1FCB1BDEAA4F00EA05B7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C05F1FCF1BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TCWineTourTests</string>
+			<key>productName</key>
+			<string>TCWineTourTests</string>
+			<key>productReference</key>
+			<string>C05F1FCD1BDEAA4F00EA05B7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C05F1FCD1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TCWineTourTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C05F1FCE1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C05F1FB11BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C05F1FB81BDEAA4F00EA05B7</string>
+			<key>remoteInfo</key>
+			<string>TCWineTour</string>
+		</dict>
+		<key>C05F1FCF1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C05F1FB81BDEAA4F00EA05B7</string>
+			<key>targetProxy</key>
+			<string>C05F1FCE1BDEAA4F00EA05B7</string>
+		</dict>
+		<key>C05F1FD01BDEAA4F00EA05B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C05F1FD11BDEAA4F00EA05B7</string>
+				<string>C05F1FD31BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TCWineTourTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FD11BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TCWineTourTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FD21BDEAA4F00EA05B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05F1FD11BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FD31BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FD41BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C05F1FDD1BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FD51BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FD61BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C05F1FD71BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C05F1FE71BDEAA4F00EA05B7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C05F1FD41BDEAA4F00EA05B7</string>
+				<string>C05F1FD51BDEAA4F00EA05B7</string>
+				<string>C05F1FD61BDEAA4F00EA05B7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C05F1FDA1BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TCWineTourUITests</string>
+			<key>productName</key>
+			<string>TCWineTourUITests</string>
+			<key>productReference</key>
+			<string>C05F1FD81BDEAA4F00EA05B7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>C05F1FD81BDEAA4F00EA05B7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TCWineTourUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C05F1FD91BDEAA4F00EA05B7</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C05F1FB11BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C05F1FB81BDEAA4F00EA05B7</string>
+			<key>remoteInfo</key>
+			<string>TCWineTour</string>
+		</dict>
+		<key>C05F1FDA1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C05F1FB81BDEAA4F00EA05B7</string>
+			<key>targetProxy</key>
+			<string>C05F1FD91BDEAA4F00EA05B7</string>
+		</dict>
+		<key>C05F1FDB1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C05F1FDC1BDEAA4F00EA05B7</string>
+				<string>C05F1FDE1BDEAA4F00EA05B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TCWineTourUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FDC1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TCWineTourUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FDD1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C05F1FDC1BDEAA4F00EA05B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C05F1FDE1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C05F1FDF1BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C05F1FE01BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C05F1FE11BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C05F1FE21BDEAA4F00EA05B7</string>
+				<string>C05F1FE31BDEAA4F00EA05B7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C05F1FE21BDEAA4F00EA05B7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>078015B137FA5AD9901D5F60</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TCWineTour/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.donovan.cotter.TCWineTour</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C05F1FE31BDEAA4F00EA05B7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>427F593BF2C3AD57A713246D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TCWineTour/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.donovan.cotter.TCWineTour</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C05F1FE41BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C05F1FE51BDEAA4F00EA05B7</string>
+				<string>C05F1FE61BDEAA4F00EA05B7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C05F1FE51BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TCWineTourTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.donovan.cotter.TCWineTourTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TCWineTour.app/TCWineTour</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C05F1FE61BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TCWineTourTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.donovan.cotter.TCWineTourTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TCWineTour.app/TCWineTour</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C05F1FE71BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C05F1FE81BDEAA4F00EA05B7</string>
+				<string>C05F1FE91BDEAA4F00EA05B7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C05F1FE81BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>TCWineTourUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.donovan.cotter.TCWineTourUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>TCWineTour</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C05F1FE91BDEAA4F00EA05B7</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>TCWineTourUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.donovan.cotter.TCWineTourUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>TCWineTour</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D65C4A79EFF887A2C1DE3032</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DDA17534B06D0BFFFD40227C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EA8F4258009570F028980DCE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA8F4258009570F028980DCE</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>EF2A5EA4A55ED3ECB76F0EDF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C05F1FB11BDEAA4F00EA05B7</string>
+</dict>
+</plist>
