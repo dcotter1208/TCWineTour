@@ -14,19 +14,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var camera = GMSCameraPosition.cameraWithLatitude(-33.868,
-            longitude:151.2086, zoom:6)
-        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera:camera)
+        
+        var camera = GMSCameraPosition.cameraWithLatitude(44.865389,
+            longitude: -85.520597, zoom: 11)
+        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        mapView.myLocationEnabled = true
+        self.view = mapView
         
         var marker = GMSMarker()
-        marker.position = camera.target
-        marker.snippet = "Hello World"
-        marker.appearAnimation = kGMSMarkerAnimationPop
+        marker.position = CLLocationCoordinate2DMake(44.865389, -85.520597)
+        marker.title = "Traverse City"
+        marker.snippet = "Michigan"
         marker.map = mapView
-        
-        self.view = mapView
     }
 }
+
 
 
 
