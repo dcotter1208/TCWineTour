@@ -28,13 +28,13 @@ class Winery {
             }
             
             if let place = place {
-                print("Place name \(place.name)")
-                print("Place address \(place.formattedAddress)")
-                print("Place placeID \(place.placeID)")
-                print("Place attributions \(place.attributions)")
-                print("test: \(place.website)")
+                print("name: \(place.name)")
+                print("address: \(place.formattedAddress)")
+                print("placeID: \(place.placeID)")
+                print("attributions: \(place.attributions)")
+                print("website: \(place.website)")
             } else {
-                print("No place details for......")
+                print("No place details for this winery")
             }
         })
     

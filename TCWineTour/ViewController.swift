@@ -20,8 +20,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let chateauChantal = "ChIJY5Cc60vTSk0R2VMNMeozAC4"
-                
         chateauChantal.getPalceInfo(chateauChantal.placeID)
 
         
@@ -30,6 +28,9 @@ class ViewController: UIViewController {
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.view = mapView
+        
+        let marker = Marker(place: chateauChantal)
+        marker.map = mapView
         
 //        chateauChantal.setMarker(chateauChantal.position, title: "Chateau Chantal", map: mapView)
         
