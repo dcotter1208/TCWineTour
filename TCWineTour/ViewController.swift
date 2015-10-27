@@ -19,9 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        chateauChantal.getPalceInfo(chateauChantal.placeID)
-
+                
+        chateauChantal.getPlaceInfo(chateauChantal.placeID)
         
         let camera = GMSCameraPosition.cameraWithLatitude(44.865389,
             longitude: -85.520597, zoom: 11)

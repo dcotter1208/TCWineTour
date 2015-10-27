@@ -17,12 +17,9 @@ class Marker: GMSMarker {
     super.init()
             
     position = place.position
+    title = place.mapTitle
     icon = UIImage(named: "wineBottle")
 
     }
 
 }
-//func setMarker(position: CLLocationCoordinate2D, title: String, map: GMSMapView) -> GMSMarker{
-//    
-//    return Winery.
-//}

@@ -12,15 +12,17 @@ import GoogleMaps
 let placesClient = GMSPlacesClient()
 
 class Winery {
+    var mapTitle = String()
     var placeID = String()
     var position = CLLocationCoordinate2D()
 
-    init(placeID: String, position: CLLocationCoordinate2D) {
+    init(mapTitle: String, placeID: String, position: CLLocationCoordinate2D) {
+        self.mapTitle = mapTitle
         self.placeID = placeID
         self.position = position
     }
     
-    func getPalceInfo(placeID: String) {
+    func getPlaceInfo(placeID: String) {
         placesClient.lookUpPlaceID(placeID, callback: { (place: GMSPlace?, error: NSError?) -> Void in
             if let error = error {
                 print("lookup place id query error: \(error.localizedDescription)")
@@ -42,7 +44,9 @@ class Winery {
         
 }
 
-    let chateauChantal = Winery(placeID: "ChIJY5Cc60vTSk0R2VMNMeozAC4", position: CLLocationCoordinate2DMake(44.865389, -85.520597))
+let chateauChantal = Winery(mapTitle: "Chateau Chantal", placeID: "ChIJY5Cc60vTSk0R2VMNMeozAC4", position: CLLocationCoordinate2DMake(44.865389, -85.520597))
+
+
 
 
 
