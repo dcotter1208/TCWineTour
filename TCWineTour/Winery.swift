@@ -9,30 +9,41 @@
 import Foundation
 import GoogleMaps
 
-//let chateauChantalmarker = GMSMarker()
-//let twoLads = GMSMarker()
-//let marker = GMSMarker()
+let placesClient = GMSPlacesClient()
 
 class Winery {
+    var placeID = String()
     var position = CLLocationCoordinate2D()
-    var title = String()
-    var marker = GMSMarker()
 
-
-    init(position: CLLocationCoordinate2D, title: String, marker: GMSMarker) {
+    init(placeID: String, position: CLLocationCoordinate2D) {
+        self.placeID = placeID
         self.position = position
-        self.title = title
-        self.marker =
     }
     
+    func getPalceInfo(placeID: String) {
+        placesClient.lookUpPlaceID(placeID, callback: { (place: GMSPlace?, error: NSError?) -> Void in
+            if let error = error {
+                print("lookup place id query error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let place = place {
+                print("Place name \(place.name)")
+                print("Place address \(place.formattedAddress)")
+                print("Place placeID \(place.placeID)")
+                print("Place attributions \(place.attributions)")
+                print("test: \(place.website)")
+            } else {
+                print("No place details for......")
+            }
+        })
     
+    }
+        
 }
 
-//chateauChantalmarker.position = CLLocationCoordinate2DMake(44.865389, -85.520597)
-//chateauChantalmarker.title = "Chateau Chantal"
-//chateauChantalmarker.snippet = "Winery"
-//
-//twoLads.position = CLLocationCoordinate2DMake(44.933800, -85.493137)
-//twoLads.title = "2 Lads"
-//twoLads.snippet = "Winery"
-//twoLads.map = mapView
+    let chateauChantal = Winery(placeID: "ChIJY5Cc60vTSk0R2VMNMeozAC4", position: CLLocationCoordinate2DMake(44.865389, -85.520597))
+
+
+
+    
