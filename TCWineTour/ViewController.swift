@@ -12,8 +12,31 @@ import GoogleMaps
 
 class ViewController: UIViewController {
     
+    var placesClient: GMSPlacesClient?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let chateauChantal = "ChIJY5Cc60vTSk0R2VMNMeozAC4"
+        
+        let placesClient = GMSPlacesClient()
+        
+        placesClient.lookUpPlaceID(chateauChantal, callback: { (place: GMSPlace?, error: NSError?) -> Void in
+            if let error = error {
+                print("lookup place id query error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let place = place {
+                print("Place name \(place.name)")
+                print("Place address \(place.formattedAddress)")
+                print("Place placeID \(place.placeID)")
+                print("Place attributions \(place.attributions)")
+            } else {
+                print("No place details for \(chateauChantal)")
+            }
+        })
+
         
         var camera = GMSCameraPosition.cameraWithLatitude(44.865389,
             longitude: -85.520597, zoom: 11)
