@@ -17,11 +17,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        placesClient = GMSPlacesClient()
-        
         let chateauChantal = "ChIJY5Cc60vTSk0R2VMNMeozAC4"
         
-        placesClient!.lookUpPlaceID(chateauChantal, callback: { (place: GMSPlace?, error: NSError?) -> Void in
+        let placesClient = GMSPlacesClient()
+        
+        placesClient.lookUpPlaceID(chateauChantal, callback: { (place: GMSPlace?, error: NSError?) -> Void in
             if let error = error {
                 print("lookup place id query error: \(error.localizedDescription)")
                 return
