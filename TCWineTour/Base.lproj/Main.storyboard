@@ -74,7 +74,7 @@
         <!--Winery DetailVC-->
         <scene sceneID="hgr-CX-XHh">
             <objects>
-                <viewController id="8hV-jR-wtu" customClass="WineryDetailVC" customModule="TCWineTour" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wineryDetailVC" id="8hV-jR-wtu" customClass="WineryDetailVC" customModule="TCWineTour" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="APg-oK-XMp"/>
                         <viewControllerLayoutGuide type="bottom" id="6Ji-PU-2Zi"/>
