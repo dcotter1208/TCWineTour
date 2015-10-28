@@ -11,9 +11,11 @@ import UIKit
 class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var winerListTableView: UITableView!
 
+    var wineryList = [chateauChantal, twoLads]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +24,34 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    let wineryCell = "wineryCell"
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return wineryList.count
+    }
+
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        var cell = tableView.dequeueReusableCellWithIdentifier(wineryCell) as! UITableViewCell
+//        
+//        if (cell == nil) {
+//            cell = UITableViewCell(
+//                style: UITableViewCellStyle.Default, reuseIdentifier: wineryCell
+//            )
+//            cell!.textLabel.text = wineryList[indexPath.row]
+//            return cell!
+//        }
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            
+            let cell = tableView.dequeueReusableCellWithIdentifier("wineryCell", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = wineryList[indexPath.row].mapTitle
+            
+            return cell
+            
+        }
+    }
+  
+
 
     /*
     // MARK: - Navigation
@@ -33,4 +63,4 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     */
 
-}
+
