@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99FD55D248AAB5DCF3C55F34 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8F4258009570F028980DCE /* libPods.a */; };
+		C025B6CD1BE1356E000934F6 /* WineryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B6CC1BE1356E000934F6 /* WineryDetailVC.swift */; };
 		C05F1FBD1BDEAA4F00EA05B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */; };
 		C05F1FBF1BDEAA4F00EA05B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */; };
 		C05F1FC21BDEAA4F00EA05B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05F1FC01BDEAA4F00EA05B7 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		078015B137FA5AD9901D5F60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		427F593BF2C3AD57A713246D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C025B6CC1BE1356E000934F6 /* WineryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineryDetailVC.swift; sourceTree = "<group>"; };
 		C05F1FB91BDEAA4F00EA05B7 /* TCWineTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCWineTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */,
 				C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */,
+				C025B6CC1BE1356E000934F6 /* WineryDetailVC.swift */,
 				C05F1FC01BDEAA4F00EA05B7 /* Main.storyboard */,
 				C05F1FC31BDEAA4F00EA05B7 /* Assets.xcassets */,
 				C05F1FC51BDEAA4F00EA05B7 /* LaunchScreen.storyboard */,
@@ -347,6 +350,7 @@
 				C05F1FBF1BDEAA4F00EA05B7 /* ViewController.swift in Sources */,
 				C0FC4C761BE0012400054C8B /* Marker.swift in Sources */,
 				C0FC4C731BDFCF7900054C8B /* Winery.swift in Sources */,
+				C025B6CD1BE1356E000934F6 /* WineryDetailVC.swift in Sources */,
 				C05F1FBD1BDEAA4F00EA05B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

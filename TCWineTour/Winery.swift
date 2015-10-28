@@ -46,6 +46,10 @@ class Winery {
 
 let chateauChantal = Winery(mapTitle: "Chateau Chantal", placeID: "ChIJY5Cc60vTSk0R2VMNMeozAC4", position: CLLocationCoordinate2DMake(44.865389, -85.520597))
 
+let twoLads = Winery(mapTitle: "2 Lads Winery", placeID: "ChIJ1WCqixPTSk0R32GumC6DelI", position: CLLocationCoordinate2DMake(44.933800, -85.493137))
+
+
+
 
 
 
