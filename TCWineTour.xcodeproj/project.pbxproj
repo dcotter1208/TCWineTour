@@ -10,6 +10,8 @@
 		99FD55D248AAB5DCF3C55F34 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8F4258009570F028980DCE /* libPods.a */; };
 		C025B6CD1BE1356E000934F6 /* WineryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B6CC1BE1356E000934F6 /* WineryDetailVC.swift */; };
 		C025B6CF1BE143D9000934F6 /* WineryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B6CE1BE143D9000934F6 /* WineryListVC.swift */; };
+		C025B6D21BE15EF2000934F6 /* InfoWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B6D01BE15EF2000934F6 /* InfoWindowVC.swift */; };
+		C025B6D31BE15EF2000934F6 /* InfoWindowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C025B6D11BE15EF2000934F6 /* InfoWindowVC.xib */; };
 		C05F1FBD1BDEAA4F00EA05B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */; };
 		C05F1FBF1BDEAA4F00EA05B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */; };
 		C05F1FC21BDEAA4F00EA05B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05F1FC01BDEAA4F00EA05B7 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		427F593BF2C3AD57A713246D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C025B6CC1BE1356E000934F6 /* WineryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineryDetailVC.swift; sourceTree = "<group>"; };
 		C025B6CE1BE143D9000934F6 /* WineryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineryListVC.swift; sourceTree = "<group>"; };
+		C025B6D01BE15EF2000934F6 /* InfoWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoWindowVC.swift; sourceTree = "<group>"; };
+		C025B6D11BE15EF2000934F6 /* InfoWindowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoWindowVC.xib; sourceTree = "<group>"; };
 		C05F1FB91BDEAA4F00EA05B7 /* TCWineTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCWineTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05F1FBC1BDEAA4F00EA05B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C05F1FBE1BDEAA4F00EA05B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				C05F1FC51BDEAA4F00EA05B7 /* LaunchScreen.storyboard */,
 				C05F1FC81BDEAA4F00EA05B7 /* Info.plist */,
 				C0FC4C741BE0011100054C8B /* Model */,
+				C025B6D01BE15EF2000934F6 /* InfoWindowVC.swift */,
+				C025B6D11BE15EF2000934F6 /* InfoWindowVC.xib */,
 			);
 			path = TCWineTour;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			files = (
 				C05F1FC71BDEAA4F00EA05B7 /* LaunchScreen.storyboard in Resources */,
 				C05F1FC41BDEAA4F00EA05B7 /* Assets.xcassets in Resources */,
+				C025B6D31BE15EF2000934F6 /* InfoWindowVC.xib in Resources */,
 				C05F1FC21BDEAA4F00EA05B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +362,7 @@
 				C0FC4C731BDFCF7900054C8B /* Winery.swift in Sources */,
 				C025B6CD1BE1356E000934F6 /* WineryDetailVC.swift in Sources */,
 				C025B6CF1BE143D9000934F6 /* WineryListVC.swift in Sources */,
+				C025B6D21BE15EF2000934F6 /* InfoWindowVC.swift in Sources */,
 				C05F1FBD1BDEAA4F00EA05B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
