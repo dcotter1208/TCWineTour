@@ -1,5 +1,5 @@
 //
-//  WineryDetailVC.swift
+//  WineryListVC.swift
 //  TCWineTour
 //
 //  Created by Donovan Cotter on 10/28/15.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class WineryDetailVC: UIViewController {
-    
-    @IBOutlet weak var wineryNameLabel: UILabel!
-    
-    @IBOutlet weak var wineryDescriptionTextView: UITextView!
+class WineryListVC: UIViewController {
+    @IBOutlet weak var winerListTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
