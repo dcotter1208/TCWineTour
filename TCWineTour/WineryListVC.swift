@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WineryListVC: UIViewController {
+class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var winerListTableView: UITableView!
 
     override func viewDidLoad() {
