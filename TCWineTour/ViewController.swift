@@ -30,11 +30,37 @@ class ViewController: UIViewController {
         
         let twoLadsMarker = Marker(place: twoLads)
         twoLadsMarker.map = mapView
+        
+        
+    
+
+//        
+//        let twoLadsMarker = Marker(place: twoLads)
+//        twoLadsMarker.map = mapView
+//        
+//        let twoLadsMarker = Marker(place: twoLads)
+//        twoLadsMarker.map = mapView
+//        
+//        let twoLadsMarker = Marker(place: twoLads)
+//        twoLadsMarker.map = mapView
 
 
+        
         func map(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
             
-            performSegueWithIdentifier(<#T##identifier: String##String#>, sender: <#T##AnyObject?#>)
+            print("MARKER INFO WINDOW TAPPED!")
+            
+//
+//            func prepareForSegue(segue: UIStoryboardSegue, sender: Marker) {
+//                if segue.identifier == "showWineryDetail" {
+//                    let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
+//                    wineryDetailVC.wineryNameLabel.text = "TEST"
+//                    
+//                    
+//                }
+//            }
+            
+//            self.performSegueWithIdentifier("showWineryDetail", sender: self)
         
         
         }
