@@ -11,7 +11,7 @@ import UIKit
 import GoogleMaps
 
 class ViewController: UIViewController {
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,44 +31,23 @@ class ViewController: UIViewController {
         let twoLadsMarker = Marker(place: twoLads)
         twoLadsMarker.map = mapView
         
-        
-    
-
-//        
-//        let twoLadsMarker = Marker(place: twoLads)
-//        twoLadsMarker.map = mapView
-//        
-//        let twoLadsMarker = Marker(place: twoLads)
-//        twoLadsMarker.map = mapView
-//        
-//        let twoLadsMarker = Marker(place: twoLads)
-//        twoLadsMarker.map = mapView
-
 
         
         func map(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
             
-            print("MARKER INFO WINDOW TAPPED!")
+        print("THE WINDOW CAN BE TAPPED!!!!")
             
-//
-//            func prepareForSegue(segue: UIStoryboardSegue, sender: Marker) {
-//                if segue.identifier == "showWineryDetail" {
-//                    let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
-//                    wineryDetailVC.wineryNameLabel.text = "TEST"
-//                    
-//                    
-//                }
-//            }
+        func prepareForSegue(segue: UIStoryboardSegue, sender: Marker) {
             
-//            self.performSegueWithIdentifier("showWineryDetail", sender: self)
-        
+            if segue.identifier == "showWineryDetail" {
+                let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
+                print("THE WINDOW CAN BE TAPPED!!!!")
+                
+                }
+            }
         
         }
-        
+    
     }
     
 }
-
-
-
-

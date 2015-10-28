@@ -30,16 +30,7 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         return wineryList.count
     }
 
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        var cell = tableView.dequeueReusableCellWithIdentifier(wineryCell) as! UITableViewCell
-//        
-//        if (cell == nil) {
-//            cell = UITableViewCell(
-//                style: UITableViewCellStyle.Default, reuseIdentifier: wineryCell
-//            )
-//            cell!.textLabel.text = wineryList[indexPath.row]
-//            return cell!
-//        }
+
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCellWithIdentifier("wineryCell", forIndexPath: indexPath)
@@ -51,16 +42,4 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
   
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
