@@ -9,14 +9,9 @@
 import UIKit
 
 class InfoWindowVC: UIView {
+    
     @IBOutlet weak var infoWindowLabel: UILabel!
-    
-    
 
-
-    @IBAction func infoButton(sender: UIButton) {
-        
-    }
     
 
 }
