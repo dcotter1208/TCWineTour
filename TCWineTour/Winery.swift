@@ -12,6 +12,7 @@ import GoogleMaps
 let placesClient = GMSPlacesClient()
 
 class Winery {
+    var wineryName = String()
     var mapTitle = String()
     var placeID = String()
     var position = CLLocationCoordinate2D()
@@ -30,14 +31,17 @@ class Winery {
             }
             
             if let place = place {
-                print("name: \(place.name)")
-                print("address: \(place.formattedAddress)")
-                print("placeID: \(place.placeID)")
-                print("attributions: \(place.attributions)")
-                print("website: \(place.website)")
-                print("OpenNow: \(place.openNowStatus)")
-                print("Coordinates:\(place.coordinate)")
-                print("types: \(place.types)")
+                
+                self.wineryName = place.name
+                print(self.wineryName)
+//                print("name: \(place.name)")
+//                print("address: \(place.formattedAddress)")
+//                print("placeID: \(place.placeID)")
+//                print("attributions: \(place.attributions)")
+//                print("website: \(place.website)")
+//                print("OpenNow: \(place.openNowStatus)")
+//                print("Coordinates:\(place.coordinate)")
+//                print("types: \(place.types)")
                 
                 print("*****************************")
             } else {
@@ -66,4 +70,6 @@ let peninsulaCellars = Winery(mapTitle: "Peninsula Cellars", placeID: "ChIJ1YJXV
 
 let bowersHarborVineyards = Winery(mapTitle: "Bowers Harbor Vineyards", placeID: "ChIJt5j2onTWH4gRqppuFhhRRkQ", position: CLLocationCoordinate2DMake(44.892408, -85.515425))
 
-    
+
+
+var wineries = [chateauChantal, twoLads, blackStarFarms, brysEstate, chateauGrandTraverse, hawthorneVineyards, peninsulaCellars, bowersHarborVineyards]

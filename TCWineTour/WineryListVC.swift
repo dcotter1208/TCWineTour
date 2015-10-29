@@ -39,10 +39,5 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         
             return cell
         }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "wineryListDetail" {
-            let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
-            print("THE WINDOW CAN BE TAPPED!!!!")
-        }
-    }
+    
 }

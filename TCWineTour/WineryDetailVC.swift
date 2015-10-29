@@ -16,6 +16,8 @@ class WineryDetailVC: UIViewController {
     @IBOutlet weak var websiteLabel: UILabel!
     @IBOutlet weak var phoneNumberlabel: UILabel!
     
+    var winery = Winery?()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +43,7 @@ class WineryDetailVC: UIViewController {
     */
     
     func displayWineryName() {
-        wineryNameLabel.text = "hello"
+        wineryNameLabel.text = winery!.wineryName
     }
     
     func displayWineryDescription() {
