@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99FD55D248AAB5DCF3C55F34 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8F4258009570F028980DCE /* libPods.a */; };
+		A14E18C71BE1647100B5520A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E18C61BE1647100B5520A /* UIViewExtension.swift */; };
 		C025B6CD1BE1356E000934F6 /* WineryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B6CC1BE1356E000934F6 /* WineryDetailVC.swift */; };
 		C025B6CF1BE143D9000934F6 /* WineryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B6CE1BE143D9000934F6 /* WineryListVC.swift */; };
 		C025B6D21BE15EF2000934F6 /* InfoWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B6D01BE15EF2000934F6 /* InfoWindowVC.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		078015B137FA5AD9901D5F60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		427F593BF2C3AD57A713246D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A14E18C61BE1647100B5520A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C025B6CC1BE1356E000934F6 /* WineryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineryDetailVC.swift; sourceTree = "<group>"; };
 		C025B6CE1BE143D9000934F6 /* WineryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineryListVC.swift; sourceTree = "<group>"; };
 		C025B6D01BE15EF2000934F6 /* InfoWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoWindowVC.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				C0FC4C741BE0011100054C8B /* Model */,
 				C025B6D01BE15EF2000934F6 /* InfoWindowVC.swift */,
 				C025B6D11BE15EF2000934F6 /* InfoWindowVC.xib */,
+				A14E18C61BE1647100B5520A /* UIViewExtension.swift */,
 			);
 			path = TCWineTour;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				C025B6CD1BE1356E000934F6 /* WineryDetailVC.swift in Sources */,
 				C025B6CF1BE143D9000934F6 /* WineryListVC.swift in Sources */,
 				C025B6D21BE15EF2000934F6 /* InfoWindowVC.swift in Sources */,
+				A14E18C71BE1647100B5520A /* UIViewExtension.swift in Sources */,
 				C05F1FBD1BDEAA4F00EA05B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
