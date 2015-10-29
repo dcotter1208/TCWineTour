@@ -39,8 +39,7 @@ class Winery {
                 self.address = place.formattedAddress
                 self.website = place.website
                 self.phoneNumber = place.phoneNumber
-                print(self.name)
-                print(self.phoneNumber!)
+
                 
                 print("*****************************")
             } else {

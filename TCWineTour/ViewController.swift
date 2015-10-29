@@ -12,6 +12,7 @@ import GoogleMaps
 
 class ViewController: UIViewController {
 
+    var winery = Winery?()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
         
         for winery in wineries {
             winery.getPlaceInfo(winery.placeID)
+            print(winery.name)
         }
         
         //This is the creation of the map.
