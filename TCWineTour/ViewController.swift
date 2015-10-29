@@ -10,7 +10,7 @@
 import UIKit
 import GoogleMaps
 
-class ViewController: UIViewController, GMSMapViewDelegate {
+class ViewController: UIViewController {
 
     
     override func viewDidLoad() {
@@ -32,6 +32,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.view = mapView
+        mapView.delegate = self
         
         
         //This is where the markers are created using the Marker class.
@@ -59,23 +60,25 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         let bowersHarborVineyardsMarker = Marker(place: bowersHarborVineyards)
         bowersHarborVineyardsMarker.map = mapView
         
-
-        
-        func map(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
-            
-        print("THE WINDOW CAN BE TAPPED!!!!")
-            
-        func prepareForSegue(segue: UIStoryboardSegue, sender: Marker) {
-            
-            if segue.identifier == "showWineryDetail" {
-                let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
-                print("THE WINDOW CAN BE TAPPED!!!!")
-                
-                }
-            }
-        
-        }
     
     }
     
+}
+
+// MARK: GMSMapViewDelegate
+extension ViewController: GMSMapViewDelegate {
+    func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
+        let newView = self.storyboard?.instantiateViewControllerWithIdentifier("wineryDetailVC")
+        self.showViewController(newView!, sender: self)
+    }
+    func viewFromNibName(name: String) -> UIView? {
+        let views = NSBundle.mainBundle().loadNibNamed(name, owner: nil, options: nil)
+        return views.first as? UIView
+    }
+    func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
+        let placeMarker = marker as! Marker
+        let infoView = viewFromNibName("InfoWindowVC") as? InfoWindowVC
+        infoView?.infoWindowLabel.text = placeMarker.place.mapTitle
+        return infoView
+    }
 }
