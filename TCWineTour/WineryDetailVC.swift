@@ -21,9 +21,7 @@ class WineryDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        displayWineryDescription()
-        displayWineryName()
-        // Do any additional setup after loading the view.
+        displayWineryInfo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,17 +30,12 @@ class WineryDetailVC: UIViewController {
     }
     
     
-    func displayWineryName() {
+    func displayWineryInfo() {
         wineryNameLabel.text = winery!.name!
         addressLabel.text = winery!.address!
         websiteLabel.text = "\(winery!.website!)"
         phoneNumberlabel.text = "\(winery!.phoneNumber!)"
-        
-    }
-    
-    func displayWineryDescription() {
-        wineryDescriptionTextView.text = "Hi!"
-        wineryDescriptionTextView.text = "hey there!"
+        wineryDescriptionTextView.text = winery!.description
         
     }
     
