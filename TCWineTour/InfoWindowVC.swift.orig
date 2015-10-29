@@ -1,0 +1,27 @@
+//
+//  InfoWindowVC.swift
+//  TCWineTour
+//
+//  Created by Donovan Cotter on 10/28/15.
+//  Copyright © 2015 DonovanCotter. All rights reserved.
+//
+
+import UIKit
+
+class InfoWindowVC: UIView {
+<<<<<<< HEAD
+    
+    @IBOutlet weak var markerInfoView: UILabel!
+=======
+    @IBOutlet weak var infoWindowLabel: UILabel!
+    
+    
+
+
+>>>>>>> master
+    @IBAction func infoButton(sender: UIButton) {
+        
+    }
+    
+
+}

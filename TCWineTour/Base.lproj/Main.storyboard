@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-503" y="-10"/>
         </scene>
-        <!--Item-->
+        <!--Winery ListVC-->
         <scene sceneID="OP7-o5-sBk">
             <objects>
                 <viewController id="aBq-yF-gU3" customClass="WineryListVC" customModule="TCWineTour" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="wineryCell" id="H5Y-k3-Je8">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H5Y-k3-Je8" id="Kwt-OT-lcN">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -62,14 +62,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="onN-po-zD2"/>
+                    <navigationItem key="navigationItem" id="nOq-WE-8mu"/>
                     <connections>
                         <outlet property="winerListTableView" destination="hfj-j7-fPd" id="dHt-zG-4xH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqv-XP-dud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1035" y="658"/>
+            <point key="canvasLocation" x="-503" y="658"/>
         </scene>
         <!--Winery DetailVC-->
         <scene sceneID="hgr-CX-XHh">
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppd-TG-Fpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-503" y="658"/>
+            <point key="canvasLocation" x="29" y="658"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9el-A4-pCt">
@@ -119,12 +119,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="j2r-jZ-Y8m"/>
-                        <segue destination="aBq-yF-gU3" kind="relationship" relationship="viewControllers" id="8pp-bo-oL4"/>
+                        <segue destination="fet-Qw-3dX" kind="relationship" relationship="viewControllers" id="8pp-bo-oL4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ax-4s-ufG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1035" y="-10"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="6TA-UE-UpE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fet-Qw-3dX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="onN-po-zD2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dmL-Gc-LTs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aBq-yF-gU3" kind="relationship" relationship="rootViewController" id="xSj-3W-f2h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xe3-Xy-Uik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1035" y="658"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

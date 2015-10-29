@@ -11,7 +11,7 @@ import UIKit
 class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var winerListTableView: UITableView!
 
-    var wineryList = [chateauChantal, twoLads]
+    var wineryList = [chateauChantal, twoLads, blackStarFarms, brysEstate, chateauGrandTraverse, hawthorneVineyards, peninsulaCellars, bowersHarborVineyards]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +36,13 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             let cell = tableView.dequeueReusableCellWithIdentifier("wineryCell", forIndexPath: indexPath)
             
             cell.textLabel?.text = wineryList[indexPath.row].mapTitle
-            
+        
             return cell
-            
+        }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "wineryListDetail" {
+            let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
+            print("THE WINDOW CAN BE TAPPED!!!!")
         }
     }
-  
-
+}
