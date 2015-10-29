@@ -9,8 +9,16 @@
 import UIKit
 
 class InfoWindowVC: UIView {
+<<<<<<< HEAD
     
     @IBOutlet weak var markerInfoView: UILabel!
+=======
+    @IBOutlet weak var infoWindowLabel: UILabel!
+    
+    
+
+
+>>>>>>> master
     @IBAction func infoButton(sender: UIButton) {
         
     }
