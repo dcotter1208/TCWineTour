@@ -25,6 +25,7 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="infoWindowImage" destination="b8N-yt-agO" id="Oit-CT-Eid"/>
                 <outlet property="infoWindowLabel" destination="FYz-ZE-I2t" id="Fya-XQ-h6m"/>
             </connections>
             <point key="canvasLocation" x="336" y="251.5"/>

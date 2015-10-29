@@ -12,6 +12,7 @@ class InfoWindowVC: UIView {
     
     @IBOutlet weak var infoWindowLabel: UILabel!
 
+    @IBOutlet weak var infoWindowImage: UIImageView!
     
 
 }
