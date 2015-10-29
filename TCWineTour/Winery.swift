@@ -39,7 +39,7 @@ class Winery {
                 print("No place details for this winery")
             }
         })
-    
+     
     }
         
 }

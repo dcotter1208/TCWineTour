@@ -14,9 +14,12 @@ class WineryDetailVC: UIViewController {
     
     @IBOutlet weak var wineryDescriptionTextView: UITextView!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        displayWineryDescription()
+        displayWineryName()
         // Do any additional setup after loading the view.
     }
 
@@ -35,5 +38,16 @@ class WineryDetailVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func displayWineryName() {
+        wineryNameLabel.text = "hello"
+    }
+    
+    func displayWineryDescription() {
+        wineryDescriptionTextView.text = "Hi!"
+        wineryDescriptionTextView.text = "hey there!"
+        
+    }
+    
+    
 }
