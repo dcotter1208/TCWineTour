@@ -17,13 +17,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //used for loop to itterate over 
+        
+//        used for loop to itterate over 
         
         for winery in wineries {
             winery.getPlaceInfo(winery.placeID)
             print(winery.name)
         }
         
+    
         //This is the creation of the map.
         let camera = GMSCameraPosition.cameraWithLatitude(44.865389, longitude: -85.520597, zoom: 11)
         var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
@@ -32,10 +34,10 @@ class ViewController: UIViewController {
         mapView.delegate = self
         
         
-        markers.count
         for marker in markers {
             marker.map = mapView
         }
+        
     
     }
     
@@ -45,14 +47,16 @@ class ViewController: UIViewController {
 extension ViewController: GMSMapViewDelegate {
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
         
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == ("showWineryDetail") {
-                let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
-//                wineryDetailVC.winery =
-//                dogListViewController.kennel = allKennels[selectedIndex]
-                
-            }
-        }
+                let newView = self.storyboard?.instantiateViewControllerWithIdentifier("wineryDetailVC")
+                self.showViewController(newView!, sender: self)
+//        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//            if segue.identifier == ("showWineryDetail") {
+//                let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
+//                wineryDetailVC.winery = wineries[markers.startIndex]
+////                dogListViewController.kennel = allKennels[selectedIndex]
+//                
+//            }
+//        }
         
 //        let newView = self.storyboard?.instantiateViewControllerWithIdentifier("wineryDetailVC")
 //        self.showViewController(newView!, sender: self)

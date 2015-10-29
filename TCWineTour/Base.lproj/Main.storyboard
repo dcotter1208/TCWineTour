@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Winery Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TCWineTour" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Cof-42-0is"/>
+                    <tabBarItem key="tabBarItem" title="Winery Map" id="Cof-42-0is"/>
                     <connections>
                         <segue destination="8hV-jR-wtu" kind="push" identifier="showWineryDetail" id="Mx5-MB-hXd"/>
                     </connections>
@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-543" y="-350"/>
         </scene>
-        <!--Item-->
+        <!--Winery List-->
         <scene sceneID="OP7-o5-sBk">
             <objects>
                 <viewController id="aBq-yF-gU3" customClass="WineryListVC" customModule="TCWineTour" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="nIr-x6-8EQ"/>
+                    <tabBarItem key="tabBarItem" title="Winery List" id="nIr-x6-8EQ"/>
                     <navigationItem key="navigationItem" id="nOq-WE-8mu"/>
                     <connections>
                         <outlet property="winerListTableView" destination="hfj-j7-fPd" id="dHt-zG-4xH"/>
@@ -167,6 +167,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2zk-M9-RnM"/>
+        <segue reference="Mx5-MB-hXd"/>
     </inferredMetricsTieBreakers>
 </document>
