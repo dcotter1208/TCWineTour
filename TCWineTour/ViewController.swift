@@ -64,7 +64,8 @@ extension ViewController: GMSMapViewDelegate {
     func mapView(mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
         let placeMarker = marker as! Marker
         let infoView = viewFromNibName("InfoWindowVC") as? InfoWindowVC
-        infoView?.infoWindowLabel.text = placeMarker.place.mapTitle
+        infoView?.infoWindowLabel.text = placeMarker.place.name
+        infoView?.infoWindowImage.image = placeMarker.place.image
         return infoView
     }
 }

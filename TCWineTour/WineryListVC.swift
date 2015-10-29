@@ -35,7 +35,7 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             
             let cell = tableView.dequeueReusableCellWithIdentifier("wineryCell", forIndexPath: indexPath)
             
-            cell.textLabel?.text = wineryList[indexPath.row].mapTitle
+            cell.textLabel?.text = wineryList[indexPath.row].name
         
             return cell
         }

@@ -43,7 +43,7 @@ class WineryDetailVC: UIViewController {
     */
     
     func displayWineryName() {
-        wineryNameLabel.text = winery!.wineryName
+        wineryNameLabel.text = winery!.name
     }
     
     func displayWineryDescription() {

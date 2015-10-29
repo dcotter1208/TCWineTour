@@ -17,7 +17,7 @@ class Marker: GMSMarker {
     super.init()
             
     position = place.position
-    title = place.mapTitle
+    title = place.name
     icon = UIImage(named: "wineBottle")
 
     }
