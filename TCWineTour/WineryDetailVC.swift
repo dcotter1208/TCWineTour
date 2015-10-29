@@ -11,9 +11,10 @@ import UIKit
 class WineryDetailVC: UIViewController {
     
     @IBOutlet weak var wineryNameLabel: UILabel!
-    
     @IBOutlet weak var wineryDescriptionTextView: UITextView!
-
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var websiteLabel: UILabel!
+    @IBOutlet weak var phoneNumberlabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
