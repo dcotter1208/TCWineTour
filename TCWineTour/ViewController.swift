@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         
         for winery in wineries {
             winery.getPlaceInfo(winery.placeID)
-            print(winery.name)
         }
         
     
@@ -49,8 +48,6 @@ extension ViewController: GMSMapViewDelegate {
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
         UIApplication.sharedApplication().openURL(NSURL(string: website)!)
         
-//                let newView = self.storyboard?.instantiateViewControllerWithIdentifier("wineryDetailVC")
-//                self.showViewController(newView!, sender: self)
     }
     
     func viewFromNibName(name: String) -> UIView? {
