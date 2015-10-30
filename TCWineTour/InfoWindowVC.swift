@@ -11,8 +11,10 @@ import UIKit
 class InfoWindowVC: UIView {
     
     @IBOutlet weak var infoWindowLabel: UILabel!
-
     @IBOutlet weak var infoWindowImage: UIImageView!
     
+    @IBOutlet weak var infoWindowAddressLabel: UILabel!
+    @IBOutlet weak var infoWindowWebsiteLabel: UILabel!
+    @IBOutlet weak var infoWindowPhoneLabel: UILabel!
 
 }
