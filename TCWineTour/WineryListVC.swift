@@ -10,15 +10,25 @@ import UIKit
 
 class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var winerListTableView: UITableView!
-
+    @IBOutlet weak var wineryListBackgroundImage: UIImageView!
+    @IBOutlet weak var wineryListTableView: UITableView!
+    
+    @IBOutlet weak var cellImage: UIImageView!
+    
+    var winery = Winery?()
     var selectedIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        wineryListTableView.reloadData()
+        wineryListBackgroundImage.image = UIImage(named: "grapes")
 
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        wineryListTableView.reloadData()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -36,7 +46,8 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             let cell = tableView.dequeueReusableCellWithIdentifier("wineryCell", forIndexPath: indexPath)
             
             cell.textLabel?.text = wineries[indexPath.row].name
-        
+//            cell.imageView?.image = UIImage(named: cellIamge)
+            
             return cell
         }
     
@@ -52,6 +63,9 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
 
+    @IBAction func unwindWineryDetailPageSegue(segue: UIStoryboardSegue) {
+        wineryListTableView.reloadData()
     
+    }
     
 }

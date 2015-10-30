@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eHw-gp-DZB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MeK-rH-YUw">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--Winery Map-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TCWineTour" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Winery Map" id="Cof-42-0is"/>
+                    <tabBarItem key="tabBarItem" title="" image="mapIcon" id="Cof-42-0is"/>
                     <connections>
                         <segue destination="8hV-jR-wtu" kind="push" identifier="showWineryDetail" id="Mx5-MB-hXd"/>
                     </connections>
@@ -26,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-543" y="-350"/>
         </scene>
-        <!--Winery List-->
+        <!--Winery ListVC-->
         <scene sceneID="OP7-o5-sBk">
             <objects>
                 <viewController id="aBq-yF-gU3" customClass="WineryListVC" customModule="TCWineTour" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,19 +39,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfj-j7-fPd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hna-v3-34c">
+                                <rect key="frame" x="0.0" y="-16" width="320" height="600"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfj-j7-fPd">
                                 <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="wineryCell" id="H5Y-k3-Je8">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="wineryCell" rowHeight="56" id="H5Y-k3-Je8">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H5Y-k3-Je8" id="Kwt-OT-lcN">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.67000000000000004" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="8hV-jR-wtu" kind="push" identifier="wineryListDetail" id="2zk-M9-RnM"/>
+                                            <segue destination="8hV-jR-wtu" kind="modal" identifier="wineryListDetail" id="2zk-M9-RnM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,10 +67,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Winery List" id="nIr-x6-8EQ"/>
+                    <tabBarItem key="tabBarItem" title="" image="listIcon" id="nIr-x6-8EQ"/>
                     <navigationItem key="navigationItem" id="nOq-WE-8mu"/>
                     <connections>
                         <outlet property="winerListTableView" destination="hfj-j7-fPd" id="dHt-zG-4xH"/>
+                        <outlet property="wineryListBackgroundImage" destination="hna-v3-34c" id="agt-0O-PbU"/>
+                        <outlet property="wineryListTableView" destination="hfj-j7-fPd" id="bS3-aE-Zhb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqv-XP-dud" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,72 +96,93 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Winery Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-Fv-LDQ">
                                 <rect key="frame" x="20" y="72" width="280" height="30"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mru-d6-dPC">
                                 <rect key="frame" x="20" y="110" width="280" height="30"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owx-cK-LC4">
                                 <rect key="frame" x="20" y="148" width="280" height="30"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceQ-ym-LS4">
-                                <rect key="frame" x="20" y="186" width="280" height="30"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="dlu-bJ-czV">
                                 <rect key="frame" x="20" y="224" width="280" height="238"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW0-6d-Uwt">
+                                <rect key="frame" x="20" y="186" width="280" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wcg-WG-JMI" appends="YES" id="WFT-mM-I7C"/>
+                                </connections>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-6w-yI9">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="Gpg-wc-M7K">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="KwJ-5h-Ad3">
+                                            <connections>
+                                                <segue destination="3gM-4M-noV" kind="unwind" unwindAction="unwindWineryDetailPageSegue:" id="plR-IH-GGK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5nB-JA-GYS"/>
+                    <navigationItem key="navigationItem" id="5nB-JA-GYS">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Back" id="c95-MP-LgL">
+                                <connections>
+                                    <segue destination="3gM-4M-noV" kind="unwind" unwindAction="unwindWineryDetailPageSegue:" id="YfS-Cp-kQg"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="QuS-9g-lCJ">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Zs-SD-RLG">
+                                    <rect key="frame" x="54" y="7" width="71" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </button>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="Mru-d6-dPC" id="0Vo-xH-UUu"/>
                         <outlet property="backgroundImage" destination="rbj-ux-rYT" id="w7A-8p-gPD"/>
                         <outlet property="phoneNumberlabel" destination="Owx-cK-LC4" id="oOH-9k-7Y7"/>
-                        <outlet property="websiteLabel" destination="ceQ-ym-LS4" id="66Q-0w-ORx"/>
+                        <outlet property="websiteLabel" destination="CW0-6d-Uwt" id="Vfj-NY-ALe"/>
                         <outlet property="wineryDescriptionTextView" destination="dlu-bJ-czV" id="MbK-9g-xhb"/>
                         <outlet property="wineryNameLabel" destination="9GX-Fv-LDQ" id="BGc-OC-7rd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppd-TG-Fpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3gM-4M-noV" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="wcg-WG-JMI">
+                    <connections>
+                        <action selector="websiteLabelClick:" destination="8hV-jR-wtu" id="7vA-Ut-lN8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-9" y="4"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xtK-XD-2cD">
-            <objects>
-                <navigationController id="eHw-gp-DZB" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="20f-pn-o8E">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="MeK-rH-YUw" kind="relationship" relationship="rootViewController" id="Uva-Cp-hat"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="61S-ST-QQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1437" y="-10"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9el-A4-pCt">
@@ -176,7 +204,11 @@
             <point key="canvasLocation" x="-1035" y="-10"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="listIcon" width="40" height="40"/>
+        <image name="mapIcon" width="40" height="40"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Mx5-MB-hXd"/>
+        <segue reference="2zk-M9-RnM"/>
     </inferredMetricsTieBreakers>
 </document>
