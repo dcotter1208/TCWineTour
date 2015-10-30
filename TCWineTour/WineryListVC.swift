@@ -16,7 +16,6 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet weak var cellImage: UIImageView!
     
     var winery = Winery?()
-    var selectedIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,14 +50,17 @@ class WineryListVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             return cell
         }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedIndex = indexPath.row
-    }
-    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        selectedIndex = indexPath.row
+//    }
+//    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "wineryListDetail" {
             let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
-            wineryDetailVC.winery = wineries[selectedIndex]
+            
+            let selectedIndex = wineryListTableView.indexPathForCell(sender as! UITableViewCell)
+            
+            wineryDetailVC.winery = wineries[(selectedIndex?.row)!]
             
         }
     }
