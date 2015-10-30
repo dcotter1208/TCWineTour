@@ -13,6 +13,7 @@ import GoogleMaps
 class ViewController: UIViewController {
 
     var winery = Winery?()
+    var website = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
     
         //This is the creation of the map.
         let camera = GMSCameraPosition.cameraWithLatitude(44.865389, longitude: -85.520597, zoom: 11)
-        var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.view = mapView
         mapView.delegate = self
@@ -46,20 +47,10 @@ class ViewController: UIViewController {
 // MARK: GMSMapViewDelegate
 extension ViewController: GMSMapViewDelegate {
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
+        UIApplication.sharedApplication().openURL(NSURL(string: website)!)
         
-                let newView = self.storyboard?.instantiateViewControllerWithIdentifier("wineryDetailVC")
-                self.showViewController(newView!, sender: self)
-//        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//            if segue.identifier == ("showWineryDetail") {
-//                let wineryDetailVC = segue.destinationViewController as! WineryDetailVC
-//                wineryDetailVC.winery = wineries[markers.startIndex]
-////                dogListViewController.kennel = allKennels[selectedIndex]
-//                
-//            }
-//        }
-        
-//        let newView = self.storyboard?.instantiateViewControllerWithIdentifier("wineryDetailVC")
-//        self.showViewController(newView!, sender: self)
+//                let newView = self.storyboard?.instantiateViewControllerWithIdentifier("wineryDetailVC")
+//                self.showViewController(newView!, sender: self)
     }
     
     func viewFromNibName(name: String) -> UIView? {
@@ -72,6 +63,12 @@ extension ViewController: GMSMapViewDelegate {
         let infoView = viewFromNibName("InfoWindowVC") as? InfoWindowVC
         infoView?.infoWindowLabel.text = placeMarker.place.name
         infoView?.infoWindowImage.image = placeMarker.place.image
+        infoView?.infoWindowAddressLabel.text = placeMarker.place.address
+        website = "\(placeMarker.place.website!)"
+        infoView?.infoWindowWebsiteLabel.text = website
+        infoView?.infoWindowPhoneLabel.text = placeMarker.place.phoneNumber
         return infoView
     }
+    
+    
 }
