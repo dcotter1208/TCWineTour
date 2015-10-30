@@ -21,6 +21,7 @@ class WineryDetailVC: UIViewController {
     
     
     var winery = Winery?()
+    var website = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,16 +37,26 @@ class WineryDetailVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func websiteLabelClick(sender: AnyObject) {
+        launchWebsiteOnClick()
+    }
+    
     
     func displayWineryInfo() {
         wineryNameLabel.text = winery!.name!
         addressLabel.text = winery!.address!
-        websiteLabel.text = "\(winery!.website!)"
+        website = "\(winery!.website)"
+        websiteLabel.text = website
         phoneNumberlabel.text = "\(winery!.phoneNumber!)"
         wineryDescriptionTextView.text = winery!.description
-//        descriptionLabel.text = winery!.description
         
     }
+    
+    func launchWebsiteOnClick() {
+        UIApplication.sharedApplication().openURL(NSURL(string: website)!)
+    }
+    
+    
     
     
 }
